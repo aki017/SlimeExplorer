@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SlimeExplorer</title>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script src="js/slimes.js"></script>
+<script src="js/mousewheel.js"></script>
+<script src="js/tool.js"></script>
+<script src="js/jquery.query.js"></script>
+<link id="theme" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" />
+    <!--[if IE]><script type="text/javascript" src="excanvas.compiled.js"></script><![endif]-->
+<link href="css/index.css" rel="stylesheet" type="text/css"><!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } 
+<![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+  <div class="sidebar1">
+    <img src="images/Slime.png" id="logo">
+<a href="https://twitter.com/intent/tweet?screen_name=aki017&text=%23SlimeExplorer" class="button">なんかTweet</a>
+    <form>
+    Seed<BR>
+    	<input id="map_seed" value="10"><br>
+    X
+    	<input id="map_x" value="0"><br>
+    Y
+    	<input id="map_y" value="0"><br>
+    ZOOM
+    	<div id="map_zoom"></div>
+   	  <input id="map_zoom_input">
+    </form>
+    <p><a href="javascript:void(0)" onmousedown="Map.getLinkUrl()" class="button">リンク</a></p>
+    <p><a href="javascript:void(0)" onmousedown="Map.getImage(this)" class="button">画像にして保存</a></p>
+    <p>version 0.5</p>
+    
+    <!-- end .sidebar1 --></div>
+  <div class="content">
+    <h1>SlimeExplorer</h1>
+    <canvas id="map" width="560px" height="600px">
+    <!-- end .content --></div>
+  <!-- end .container --></div>
+</body>
+</html>
